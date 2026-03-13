@@ -46,8 +46,8 @@ export default function BlogPage() {
   }, [])
 
   return (
-    <main className="min-h-screen bg-secondary px-10 py-16">
-      <div className="max-w-5xl mx-auto">
+    <main className="min-h-screen bg-secondary px-4 py-12 sm:px-6 lg:px-10">
+      <div className="mx-auto max-w-5xl">
         <header className="mb-8">
           <h1 className="text-3xl md:text-4xl font-libre font-bold text-primary">Blog</h1>
           <p className="text-gray-600 mt-2 max-w-2xl">

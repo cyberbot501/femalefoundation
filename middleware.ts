@@ -14,7 +14,7 @@ export function middleware(request: NextRequest) {
     // "/admin",
   ]
 
-  const authRoutes = ["/login", "/register"]
+  const authRoutes = ["/dashboard", "/register"]
 
   const isProtectedRoute = protectedRoutes.some(route =>
     pathname.startsWith(route)
@@ -24,7 +24,7 @@ export function middleware(request: NextRequest) {
 
   // 🚫 Not logged in → redirect to login
   if (isProtectedRoute && !token) {
-    return NextResponse.redirect(new URL("/login", request.url))
+    return NextResponse.redirect(new URL("/dashboard", request.url))
   }
 
   // 🔁 Logged in → prevent access to login/register

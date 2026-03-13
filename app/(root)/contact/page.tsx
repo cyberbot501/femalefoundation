@@ -38,8 +38,8 @@ export default function ContactPage() {
   }
 
   return (
-    <main className="min-h-screen bg-secondary px-10 py-16">
-      <div className="max-w-5xl mx-auto bg-white rounded-2xl shadow-sm p-10 grid md:grid-cols-2 gap-10">
+    <main className="min-h-screen bg-secondary px-4 py-12 sm:px-6 lg:px-10">
+      <div className="mx-auto grid max-w-5xl gap-10 rounded-2xl bg-white p-6 shadow-sm md:grid-cols-2 sm:p-8 lg:p-10">
         <section>
           <h1 className="text-3xl font-libre font-bold text-primary mb-3">Contact Us</h1>
           <p className="text-gray-600 text-sm mb-6">

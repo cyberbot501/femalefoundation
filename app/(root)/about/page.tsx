@@ -40,8 +40,8 @@ export default function AboutPage() {
   }, [])
 
   return (
-    <main className="min-h-screen bg-secondary px-10 py-16">
-      <section className="max-w-6xl mx-auto">
+    <main className="min-h-screen bg-secondary px-4 py-12 sm:px-6 lg:px-10">
+      <section className="mx-auto max-w-6xl">
         <h1 className="text-4xl md:text-5xl font-bold font-libre text-primary mb-4">
           {content?.headline || "About Our Community        "}
         </h1>
