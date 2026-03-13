@@ -60,9 +60,9 @@ export default function DonatePage() {
   }
 
   return (
-    <main className="min-h-screen bg-secondary px-10 py-16">
-      <div className="max-w-5xl mx-auto bg-white rounded-2xl shadow-sm p-10">
-        <header className="flex items-center justify-between mb-8">
+    <main className="min-h-screen bg-secondary px-4 py-12 sm:px-6 lg:px-10">
+      <div className="mx-auto max-w-5xl rounded-2xl bg-white p-6 shadow-sm sm:p-8 lg:p-10">
+        <header className="mb-8 flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-center">
           <div className="flex items-center gap-3">
             <Image src={logo} alt="Female Foundation logo" width={48} height={48} />
             <div>
