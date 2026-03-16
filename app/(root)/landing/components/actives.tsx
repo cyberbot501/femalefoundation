@@ -2,12 +2,16 @@
 
     import { motion } from "framer-motion"
     import Image from "next/image"
+    import school from "@/app/asset/school.jpeg"
+    import Reusable from "@/app/asset/ekiti.jpeg"
+    import vine from "@/app/asset/vine.jpg"
+    import meetup from "@/app/asset/meetup.jpg"
 
     const items = [
-    { id: 1, title: "Hackathon 2023", img: "/images/1.jpg" },
-    { id: 2, title: "Office Tour", img: "/images/2.jpg" },
-    { id: 3, title: "Hackathon 2022", img: "/images/3.jpg" },
-    { id: 4, title: "Community Meetup", img: "/images/4.jpg" },
+    { id: 1, title: "School Visit", img: school },
+    { id: 2, title: "Reusable Pad Workshop", img: Reusable },
+    { id: 3, title: "Living Vine Meetup", img: vine },
+    { id: 4, title: "Community Meetup", img: meetup },
     ]
 
     export default function ActivitiesSection() {

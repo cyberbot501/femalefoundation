@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from "react"
 import { supabase } from "@/lib/supabaseClient"
+import founder from "@/app/asset/kola.jpeg"
+import Image from "next/image"
 
 type AboutContent = {
   id: number
@@ -43,19 +45,41 @@ export default function AboutPage() {
     <main className="min-h-screen bg-secondary px-4 py-12 sm:px-6 lg:px-10">
       <section className="mx-auto max-w-6xl">
         <h1 className="text-4xl md:text-5xl font-bold font-libre text-primary mb-4">
-          {content?.headline || "About Our Community        "}
+          About Female Network Foundation
         </h1>
         <p className="text-lg text-gray-600 max-w-2xl mb-10">
-          {content?.subheadline ||
-            "A safe, supportive space where women connect, grow, and build lasting impact together."}
+          A safe, supportive space where women connect, grow, and build lasting impact together.
         </p>
 
         <div className="grid md:grid-cols-[3fr,2fr] gap-10 items-start">
           <div>
             <div className="bg-white rounded-2xl shadow-sm p-8 mb-8">
               <p className="text-gray-700 leading-relaxed whitespace-pre-line   ">
-                {content?.body ||
-                  "Use Supabase to manage this text. Create an 'about_content' table with headline, subheadline, and body fields, then edit everything from your admin page."}
+                Founded and registered by Oluwaseun Kola Akinola in 2024, CAC (RN: 8191592) and SCUML (RN: SC 131401223), with headquarters in Ado Ekiti, Ekiti State, Nigeria, Female Network Foundation  is committed to empowering women by providing resources in technology, gender advocacy, and personal development.<br /><br />
+
+                Our mission is aligned with the United Nations Sustainable Development Goals (SDGs), particularly Goals 5, 4, and 8, to create a safe and inclusive space where women can embrace their identity, grow personally and professionally, and break free from societal limitations.<br /><br />
+
+                Female Network Foundation is a non-profit organization devoted to empowering women through personal growth, self-discovery, and transformation. We provide a safe and supportive space for women to rebuild their sense of self-worth, explore their identity, and achieve personal and professional success.<br /><br />
+
+                Since our founding, we have positively impacted the lives of over 2,000 women through various conferences, webinars, and virtual events. Our community is home to nearly 150 active members who participate in our programs and support one another on their journey toward self-empowerment and gender advocacy.<br /><br />
+
+                Our initiatives cover essential areas such as:<br />
+
+                Mental health<br />
+
+                Financial independence<br />
+
+                Creativity<br />
+
+                Self-expression<br /><br />
+
+                Through the Women Identity Conference, we help women redefine their identities and build self-confidence. We also organize mental health workshops and financial independence webinars to equip women with the tools they need to navigate life’s challenges and gain financial control.<br /><br />
+
+                In addition, we celebrate the power of creativity as a form of healing and self-expression, encouraging women to explore their passions and talents.
+
+                With a strong commitment to making a lasting difference, we have reached women globally through media and virtual platforms. Our programs have allowed us to build meaningful connections, create a supportive community, and inspire women to embrace their true selves.
+
+                We are continuously evolving and growing, dedicated to transforming the lives of more women by providing resources, education, and opportunities for personal and professional growth.
               </p>
             </div>
 
@@ -70,37 +94,25 @@ export default function AboutPage() {
           </div>
 
           <div className="space-y-8">
-            <div className="bg-white rounded-2xl shadow-sm p-4 h-[260px] flex items-center justify-center border border-dashed border-gray-300">
-              {content?.hero_image_url ? (
-                // You will replace this with a proper <Image> pointing to Supabase storage URL
-                <div className="w-full h-full rounded-xl bg-gray-100 flex items-center justify-center text-sm text-gray-500 text-center px-4">
-                  Image from Supabase will appear here. Use the admin page to upload and link it.
-                </div>
-              ) : (
-                <p className="text-center text-gray-500 text-sm max-w-xs">
-                  Add your main About page picture here from Supabase storage. I left this box ready for your
-                  image.
-                </p>
-              )}
+            <div className="bg-white rounded-2xl shadow-sm p-4 md:h-[600px] h-[500px] flex items-center justify-center border border-dashed border-gray-300">
+              <Image src={founder} alt="Founder Kola" className="w-full md:h-full h-[450px] object-fit" />
+
             </div>
 
             <div className="bg-white rounded-2xl shadow-sm p-4">
               <p className="text-sm font-medium text-gray-500 mb-3">Community Highlight Video</p>
               <div className="aspect-video w-full rounded-xl overflow-hidden bg-black/5 flex items-center justify-center">
-                {content?.highlight_video_url ? (
-                  <iframe
-                    className="w-full h-full border-0"
-                    src={content.highlight_video_url}
-                    title="Community highlight video"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  />
-                ) : (
-                  <p className="text-gray-500 text-sm text-center px-4">
-                    Paste your YouTube video link in Supabase (field: <span className="font-mono">highlight_video_url</span>) and
-                    it will show here automatically.
-                  </p>
-                )}
+
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="w-full h-full object-cover"
+                >
+                  <source src="/asset/video/video.mp4" type="video/mp4" />
+                </video>
+
               </div>
             </div>
           </div>
