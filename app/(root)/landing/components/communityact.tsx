@@ -2,8 +2,16 @@
 
 import PatternBackground from "./PatternBackground"
 import { motion } from "framer-motion"
+import { useRouter } from "next/navigation";
 
 export default function CommunityCTA() {
+  const router = useRouter()
+    const handleClick = () => {
+    router.push("/join");
+  };
+
+
+
   return (
     <section className="py-32 bg-gray-50 px-10 flex justify-center">
       <motion.div
@@ -19,7 +27,7 @@ export default function CommunityCTA() {
             Looking to connect with other members?
           </h3>
 
-          <button className="mt-2 px-4 py-2 bg-white text-black rounded-md text-sm">
+          <button onClick={handleClick} className="mt-2 px-4 py-2 bg-white text-black rounded-md text-sm">
             Join the Community
           </button>
         </div>
