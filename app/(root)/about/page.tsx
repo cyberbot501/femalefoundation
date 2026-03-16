@@ -103,15 +103,16 @@ export default function AboutPage() {
               <p className="text-sm font-medium text-gray-500 mb-3">Community Highlight Video</p>
               <div className="aspect-video w-full rounded-xl overflow-hidden bg-black/5 flex items-center justify-center">
 
-                <video
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                  className="w-full h-full object-cover"
-                >
-                  <source src="/asset/video/video.mp4" type="video/mp4" />
-                </video>
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/hszTinXEAZ4"
+                  title="Community Highlight Video"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="w-full h-full"
+                ></iframe>
 
               </div>
             </div>
