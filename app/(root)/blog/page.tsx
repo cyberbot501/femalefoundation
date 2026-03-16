@@ -96,7 +96,7 @@ export default function BlogPage() {
 
         {!loading && posts.length === 0 && !error && (
           <p className="mt-8 text-sm text-gray-500">
-            No posts yet. Once you publish posts in Sanity (type: post), they will appear here.
+            No posts yet. Once posts are published, they will appear here.
           </p>
         )}
       </div>
