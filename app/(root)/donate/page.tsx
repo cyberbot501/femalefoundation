@@ -82,13 +82,13 @@ export default function DonatePage() {
             <h2 className="text-lg font-semibold text-primary">Bank Transfer Details</h2>
             <div className="rounded-xl border border-gray-200 bg-gray-50 p-4 text-sm text-gray-700 space-y-2">
               <p>
-                <span className="font-medium">Account Name:</span> Female Foundation
+                <span className="font-medium">Account Name:</span> Female Network
               </p>
               <p>
-                <span className="font-medium">Bank:</span> Your Bank Name
+                <span className="font-medium">Bank:</span> UNITED BANK FOR AFRICA (UBA)
               </p>
               <p>
-                <span className="font-medium">Account Number:</span> 0000000000
+                <span className="font-medium">Account Number:</span> 1029637741
               </p>
               <p className="text-xs text-gray-500 mt-2">
                 After you make a transfer, please upload your receipt on this page so we can confirm

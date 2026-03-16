@@ -7,7 +7,15 @@ export default function Highlight() {
         </h2>
 
         <div className="mt-12 flex justify-center">
-          {/* Replace with video or image */}
+        <video
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="w-full h-full object-cover"
+                >
+                  <source src="/asset/video/video.mp4" type="video/mp4" />
+                </video>
           <div className="aspect-video w-full max-w-[560px] rounded-xl bg-gray-200" />
         </div>
       </div>

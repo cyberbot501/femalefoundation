@@ -10,7 +10,7 @@ export default function CommunityCTA() {
         initial={{ opacity: 0, y: 90 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="relative w-full h-[360px] rounded-2xl overflow-hidden bg-gray-700 text-white flex items-center justify-center"
+        className="relative w-full h-[360px] rounded-2xl overflow-hidden bg-accent text-white flex items-center justify-center"
       >
         <PatternBackground />
 

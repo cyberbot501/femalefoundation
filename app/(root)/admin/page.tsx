@@ -420,7 +420,7 @@ export default function AdminPage() {
           )}
         </section>
 
-        {/* About content */}
+        {/* About content
         <section className="rounded-2xl bg-white p-6 shadow-sm">
           <h2 className="mb-3 text-lg font-semibold text-primary">About page content</h2>
           <p className="mb-4 text-xs text-gray-500">
@@ -503,7 +503,7 @@ export default function AdminPage() {
               {aboutMessage && <p className="text-sm text-gray-600">{aboutMessage}</p>}
             </form>
           )}
-        </section>
+        </section> */}
 
         {/* Gallery */}
         <section className="rounded-2xl bg-white p-6 shadow-sm">

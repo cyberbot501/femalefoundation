@@ -22,7 +22,7 @@ export function middleware(request: NextRequest) {
 
   const isAuthRoute = authRoutes.includes(pathname)
 
-  // 🚫 Not logged in → redirect to login
+  //  Not logged in → redirect to login
   if (isProtectedRoute && !token) {
     return NextResponse.redirect(new URL("/dashboard", request.url))
   }

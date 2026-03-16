@@ -2,6 +2,7 @@
 
 import { FormEvent, useState } from "react"
 import { supabase } from "@/lib/supabaseClient"
+import Link from "next/dist/client/link"
 
 export default function ContactPage() {
   const [loading, setLoading] = useState(false)
@@ -50,9 +51,11 @@ export default function ContactPage() {
           <div className="space-y-3 text-sm text-gray-700">
             <p className="font-semibold">Connect on social media</p>
             <ul className="space-y-1">
-              <li>Instagram: @yourhandle</li>
-              <li>Twitter: @yourhandle</li>
-              <li>Email: hello@example.com</li>
+             <li><Link href ='https://www.facebook.com/share/1HpNd6vNmb/'>Facebook: @fnfee-foundation </Link></li>
+                            <li><Link href ='https://www.linkedin.com/company/fnfee-foundation/'>Linkedin: @fnfee-foundation </Link></li>
+                            <li><Link href='https://chat.whatsapp.com/HM1Z0qWPHuxKCqlUo7wSui'>WhatsApp </Link></li>
+                            <li><Link href ='https://x.com/fnfeefoundation?t=_AWYBsk70BlR9XXsWxHCdw&s=09'>Twitter: @fnfee_foundation </Link></li>
+                            <li><Link href ='https://www.instagram.com/fnfee_foundation?igsh=NTFubzlycWt4Y3Ix'>Instagram: @fnfee_foundation </Link></li>
             </ul>
           </div>
         </section>

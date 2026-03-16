@@ -9,7 +9,7 @@ export default function CallToAction() {
           Join a growing network of women supporting women across industries.
         </p>
 
-        <div className="mt-10 flex flex-col md:flex-row justify-center gap-6">
+        <div className="mt-10 flex flex-col md:flex-row items-center justify-center gap-6">
           <div className="border border-white/40 rounded-lg p-6 w-64">
             <h3 className="font-semibold">Membership</h3>
             <p className="text-sm text-white/80 mt-2">
